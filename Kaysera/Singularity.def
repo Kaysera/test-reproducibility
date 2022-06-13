@@ -15,4 +15,5 @@ Stage: spython-base
 	pip install --no-cache-dir -r requirements.txt
 
 %runscript
+	cd ${EXP_PATH}
 	python3 ./docker-test.py singularity
