@@ -8,6 +8,7 @@ Stage: spython-base
 	git checkout 29494b810be8812a536ecb676cc82025da0fbe7d
 
 %files
+	ls
 	requirements.txt ./
 
 
