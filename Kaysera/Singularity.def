@@ -2,13 +2,15 @@ Bootstrap: docker
 From: python:3
 Stage: spython-base
 
+%setup
+	git clone https://github.com/Kaysera/test-reproducibility-project
+	git checkout 29494b810be8812a536ecb676cc82025da0fbe7d
+
 %files
-requirements.txt ./
+	requirements.txt ./
 
 %post
-
-pip install --no-cache-dir -r requirements.txt
-
+	pip install --no-cache-dir -r requirements.txt
 
 %runscript
 	cd ${EXP_PATH}
