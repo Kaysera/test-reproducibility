@@ -4,6 +4,7 @@ Stage: spython-base
 
 %setup
 	git clone https://github.com/Kaysera/test-reproducibility-project
+	cd test-reproducibility-project
 	git checkout 29494b810be8812a536ecb676cc82025da0fbe7d
 
 %files
@@ -14,5 +15,4 @@ Stage: spython-base
 	pip install --no-cache-dir -r requirements.txt
 
 %runscript
-	cd ${EXP_PATH}
 	python3 ./docker-test.py singularity
