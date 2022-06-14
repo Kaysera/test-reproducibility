@@ -5,7 +5,7 @@ Stage: spython-base
 %setup
 	git clone https://github.com/Kaysera/${REPO_NAME}
 	cd ${REPO_NAME}
-	git checkout 29494b810be8812a536ecb676cc82025da0fbe7d
+	git checkout ${COMMIT}
 
 %files
 	${REPO_NAME}/requirements.txt ./
