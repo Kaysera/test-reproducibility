@@ -3,6 +3,7 @@ From: python:3
 Stage: spython-base
 
 %setup
+	cd ${EXP_PATH}
 	git clone https://github.com/Kaysera/${REPO_NAME}
 	cd ${REPO_NAME}
 	git checkout ${COMMIT}
